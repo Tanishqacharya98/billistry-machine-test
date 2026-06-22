@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# env
+.env
+
+# logs
+logs
+*.log
+
+# build
+build/
+dist/
+
+# cache
+.cache/
+.parcel-cache/
+
+# vscode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# coverage
+coverage/
+
+# package lock optional
+# package-lock.json
