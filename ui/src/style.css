@@ -1,0 +1,297 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+}
+
+/* Navbar */
+
+.navbar{
+  background:#1f2937;
+  color:white;
+  padding:15px 30px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navbar h2{
+  color:white;
+}
+
+.navbar div{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.navbar a:hover{
+  color:#60a5fa;
+}
+
+.navbar button{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:8px 15px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* Auth */
+
+.auth-container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.auth-card{
+  width:400px;
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.auth-card h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.auth-card input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+
+.auth-card button{
+  width:100%;
+  padding:12px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.auth-card p{
+  text-align:center;
+  margin-top:15px;
+  color:#2563eb;
+}
+
+/* Common Page */
+
+.page{
+  padding:20px;
+}
+
+.page h1,
+.page h2{
+  margin-bottom:20px;
+}
+
+/* Dashboard */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.stat-box{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,.05);
+}
+
+.stat-box h3{
+  color:#666;
+  margin-bottom:10px;
+}
+
+.stat-box h2{
+  color:#2563eb;
+}
+
+/* Forms */
+
+.form-section{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.form-section input,
+.form-section select{
+  width:250px;
+  padding:10px;
+  margin:5px;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+
+.form-section button{
+  padding:10px 15px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* Search */
+
+.search-box{
+  margin-bottom:20px;
+}
+
+.search-box input{
+  padding:10px;
+  width:250px;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+
+.search-box button{
+  padding:10px 15px;
+  margin-left:10px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* Table */
+
+.table-container{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 0 10px rgba(0,0,0,.05);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+table th{
+  background:#1f2937;
+  color:white;
+  padding:12px;
+  text-align:left;
+}
+
+table td{
+  padding:12px;
+  border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+  background:#f9fafb;
+}
+
+/* Buttons */
+
+.btn{
+  padding:8px 15px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.btn-primary{
+  background:#2563eb;
+  color:white;
+}
+
+.btn-danger{
+  background:#ef4444;
+  color:white;
+}
+
+.btn-success{
+  background:#16a34a;
+  color:white;
+}
+
+/* Invoice */
+
+.invoice-box{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .navbar div{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .auth-card{
+    width:90%;
+  }
+
+  .form-section input,
+  .form-section select{
+    width:100%;
+  }
+
+}
+
+.dark{
+ background:#111827;
+ color:white;
+}
+
+.dark .stat-box,
+.dark .table-container,
+.dark .invoice-box,
+.dark .form-section{
+ background:#1f2937;
+ color:white;
+}
+
+.dark input,
+.dark select{
+ background:#374151;
+ color:white;
+ border:none;
+}
+
+.dark table td{
+ color:white;
+}
